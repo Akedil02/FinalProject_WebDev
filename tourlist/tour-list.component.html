@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Available Tours</h2>
+  <div class="cards">
+    <div class="card" *ngFor="let tour of tours">
+      <h4>{{ tour.hotel.name }}</h4>
+      <p>{{ tour.hotel.city.name }}, {{ tour.hotel.city.country.name }}</p>
+      <p class="price">{{ tour.hotel.price }} ₸</p>
+      <button class="button" (click)="bookTour(tour.id)">Book</button>
+    </div>
+  </div>
+</div>
