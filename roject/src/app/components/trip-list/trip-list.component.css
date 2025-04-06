@@ -1,0 +1,15 @@
+.trip-list {
+  padding: 2rem;
+}
+.trip-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.trip-card img {
+  width: 150px;
+  border-radius: 8px;
+}

@@ -1,0 +1,7 @@
+.trip-details {
+  padding: 2rem;
+}
+.trip-details img {
+  max-width: 100%;
+  border-radius: 8px;
+}

@@ -1,0 +1,31 @@
+<div class="trip-list" *ngIf="trips.length > 0">
+  <h2>Available Trips</h2>
+  <div class="trip-card" *ngFor="let trip of trips">
+    <img [src]="trip.imageUrl" alt="Trip image">
+    <h3>{{ trip.destination }}</h3>
+    <p>{{ trip.description }}</p>
+    <button>View Details</button>
+  </div>
+</div>
+trips = [
+  {
+    destination: 'Paris',
+    description: 'Experience the City of Light with its rich history and stunning architecture.',
+    imageUrl: 'https://images.app.goo.gl/9fa2wPXbmYYYJSjN6'
+  },
+  {
+    destination: 'Tokyo',
+    description: 'Explore the vibrant culture and skyline of Japan\'s capital.',
+    imageUrl: 'https://images.app.goo.gl/RBrRmKiCFufqVyEs9'
+  },
+  {
+    destination: 'New York',
+    description: 'Discover the streets and landmarks of the Big Apple.',
+    imageUrl: 'https://images.app.goo.gl/zT9vzguKDoqpNoGd9'
+  },
+  {
+    destination: 'Rome',
+    description: 'Immerse in ancient history and art of the Eternal City.',
+    imageUrl: 'https://images.app.goo.gl/f6WMJfXtzk6HE5Kf6'
+  }
+];

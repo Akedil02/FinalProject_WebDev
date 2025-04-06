@@ -1,0 +1,7 @@
+<div *ngIf="trip" class="trip-details">
+  <h2>{{ trip.destination }}</h2>
+  <img [src]="trip.imageUrl" alt="Trip">
+  <p>{{ trip.description }}</p>
+  <p><strong>From:</strong> {{ trip.startDate }}</p>
+  <p><strong>To:</strong> {{ trip.endDate }}</p>
+</div>

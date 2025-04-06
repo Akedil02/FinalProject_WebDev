@@ -1,0 +1,11 @@
+<div class="search-form">
+  <input [(ngModel)]="name" placeholder="Your Name">
+  <input [(ngModel)]="destination" placeholder="Destination">
+  <input [(ngModel)]="startDate" type="date" placeholder="Start Date">
+  <input [(ngModel)]="endDate" type="date" placeholder="End Date">
+
+  <button (click)="searchTrips()">Search Trips</button>
+  <button (click)="bookTrip()">Book Now</button>
+  <button (click)="saveTrip()">Save Trip</button>
+  <button (click)="getRecommendations()">Get Recommendations</button>
+</div>
