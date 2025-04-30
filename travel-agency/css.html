@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hot Tours - Travel with Us!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .filters {
+            width: 250px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .filters h3 {
+            margin-top: 0;
+        }
+        .filters label {
+            display: block;
+            margin: 5px 0;
+        }
+        .cards {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding-left: 20px;
+        }
+        .card {
+            background: white;
+            width: 30%;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+        .button {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Travel with Us! – Best Hot Tours</div>
+    <div class="container">
+        <aside class="filters">
+            <h3>Destination</h3>
+            <label><input type="checkbox"> All Countries</label>
+            <label><input type="checkbox"> Thailand</label>
+            <label><input type="checkbox"> Egypt</label>
+            <label><input type="checkbox"> Turkey</label>
+            <h3>Departure From</h3>
+            <label><input type="checkbox"> Almaty</label>
+            <label><input type="checkbox"> Astana</label>
+        </aside>
+        <section class="cards">
+            <div class="card">
+                <img src="hotel1.jpg" alt="Hotel 1">
+                <div class="card-content">
+                    <h4>Radisson Resort</h4>
+                    <p>UAE, Ras Al Khaimah</p>
+                    <p class="price">752,647 ₸</p>
+                    <a href="#" class="button">More Info</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hotel2.jpg" alt="Hotel 2">
+                <div class="card-content">
+                    <h4>Dendro Hotel</h4>
+                    <p>Vietnam, Nha Trang</p>
+                    <p class="price">640,000 ₸</p>
+                    <a href="#" class="button">More Info</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="hotel3.jpg" alt="Hotel 3">
+                <div class="card-content">
+                    <h4>Lonicera World</h4>
+                    <p>Turkey, Alanya</p>
+                    <p class="price">835,621 ₸</p>
+                    <a href="#" class="button">More Info</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
